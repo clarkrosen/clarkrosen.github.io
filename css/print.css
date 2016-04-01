@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Oswald|Droid+Serif:400,700);
 
 @page {
+  max-width: 10in;
   margin: 0.5in;
 }
 
@@ -85,12 +86,6 @@ section {
         padding-right: 0.1in;
         padding-top: 0;
         margin-bottom: 0.2in;
-}
-
-#page {
-  max-width: 10in;
-  margin: 0 auto;
-  overflow: auto;
 }
 
 #right {
