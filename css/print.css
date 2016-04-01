@@ -1,10 +1,15 @@
-@import url(https://fonts.googleapis.com/css?family=Oswald|Droid+Serif:400,700);
-
 * {
+  background: transparent;
   color: black;
   font-family: serif;
   font-size: 10pt;
 }
+
+@page {
+  margin: 0.5in;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Oswald|Droid+Serif:400,700);
 
 nav {
   display: none;
@@ -85,7 +90,6 @@ section {
 
 #page {
   max-width: 10in;
-  margin: .5in;
   overflow: auto;
 }
 
