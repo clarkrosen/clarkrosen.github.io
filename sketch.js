@@ -94,12 +94,4 @@ function mouseDragged() {
 
   }
 
-function ShowMyName() {
-        FB.api("/me",
-                function (response) {
-                    alert('Name is ' + response.name);
-                });
-         
-    }
-
 
