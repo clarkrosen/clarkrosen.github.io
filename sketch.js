@@ -51,6 +51,15 @@ function setup() {
 	player.addImage(img);
 	
   ground = new Group();
+  
+    
+  FB.init({
+        appId: '1186723288007631',
+        status: true, 
+        cookie: true, 
+        xfbml: true
+    });    
+
 }
 
 function draw() {
@@ -93,5 +102,4 @@ function mouseDragged() {
   	p.push( new Splash(windowWidth/2, mouseY) );
 
   }
-
 
