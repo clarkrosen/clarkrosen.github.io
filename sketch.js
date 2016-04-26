@@ -1,7 +1,9 @@
 var logo;
-
 var ground;
 var player;
+var playing = false;
+var button;
+var bg;
 
 var Particle = function(x, y) {
 	this.x = x;
@@ -42,18 +44,12 @@ logo = loadAnimation("assets/0.png", "assets/22.png")
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth, 200); 
-	canvas.parent('middle_panel');
+  	bg = loadImage("assets/bg water.jpg")
+    canvas = createCanvas(1000,988);
 	
-	var img = loadImage("assets/lol.png");
 	
-	player = createSprite(1000, height/2);
-	player.addImage(img);
 	
-  ground = new Group();
-  
-    
-  FB.init({
+	  FB.init({
         appId: '1186723288007631',
         status: true, 
         cookie: true, 
@@ -65,49 +61,34 @@ function setup() {
   href: 'https://clarkrosen.github.io/index.html',
 }, function(response){});
 
-
 }
 
 function draw() {
   
-    background(255,255,255);
+    background(bg);
     
     for (var i = 0; i < p.length; i++) {
   	p[i].show();
   	p[i].fall();
 }
     
-    if(mouseY < 100)
+    if(mouseY < 300)
     logo.play();
     else
     logo.stop();
 
-   animation(logo, windowWidth/2, 100);
-   
-  camera.zoom = .2;
+   animation(logo, 500, 100);
   
-  
-  drawSprites();
-
-     player.velocity.x -= 1;
-
-  for (var i = 0; i < ground.length; i++) {
-    //25 is the half the width of the sprite
-    if (d.position.x < player.position.x - width/2 - 25) {
-
-      d.position.x = player.position.x + width/2 + 25;
-
-    }
-  }
+   camera.zoom = .6;
 
 }
 
-function mouseDragged() {
+function mouseMoved() {
 
   	p.push( new Particle(windowWidth/2, mouseY) );
   	p.push( new Splash(windowWidth/2, mouseY) );
-
   }
+  
   
  (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
@@ -115,4 +96,6 @@ function mouseDragged() {
   js = d.createElement(s); js.id = id;
   js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.6";
   fjs.parentNode.insertBefore(js, fjs);
+  
+  
 }(document, 'script', 'facebook-jssdk'));
