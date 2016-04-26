@@ -41,8 +41,8 @@ var Splash = function(x, y) {
 function setup() {
   canvas = createCanvas(windowWidth,windowHeight);
   
-  fingers = createVideo(['assets/portfolio.mov',
-                         'assets/portfolio.webm']);
+  fingers = createVideo(['assets/portfolio2.mov',
+                         'assets/portfolio2.webm']);
   fingers.parent('video')
   fingers.loop();
 }
