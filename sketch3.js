@@ -48,6 +48,7 @@ function setup() {
 }
 
  function draw() {
+     background(255);
     for (var i = 0; i < p.length; i++) {
   	p[i].show();
   	p[i].fall();

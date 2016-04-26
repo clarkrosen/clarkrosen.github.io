@@ -3,18 +3,14 @@ var canvas;
 
 function setup() {
   createCanvas(1920, 1080);
-
-
  	video = createVideo(['assets/lol.mp4', 'assets/lol.webm']);
   video.loop();
   video.hide();
   noStroke();
   fill(0);
-
 }
 
 function draw() {
-  
   background(255);
   video.loadPixels();
   var stepSize = round(constrain(mouseX / 8, 20, 82));
@@ -27,7 +23,3 @@ function draw() {
     }
   }
 }
-
-
-
-

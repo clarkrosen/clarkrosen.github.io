@@ -38,7 +38,6 @@ var Splash = function(x, y) {
 
 var p = [];
 
-
 function preload() {
 logo = loadAnimation("assets/0.png", "assets/22.png")
 }
@@ -46,25 +45,19 @@ logo = loadAnimation("assets/0.png", "assets/22.png")
 function setup() {
   	bg = loadImage("assets/bg water.jpg")
     canvas = createCanvas(1000,988);
-	
-	
-	
 	  FB.init({
         appId: '1186723288007631',
         status: true, 
         cookie: true, 
         xfbml: true
     });    
-    
    FB.ui({
   method: 'share',
   href: 'https://clarkrosen.github.io/index.html',
 }, function(response){});
-
 }
 
 function draw() {
-  
     background(bg);
     
     for (var i = 0; i < p.length; i++) {
@@ -78,17 +71,14 @@ function draw() {
     logo.stop();
 
    animation(logo, 500, 100);
-  
+   
    camera.zoom = .6;
-
 }
 
 function mouseMoved() {
-
   	p.push( new Particle(windowWidth/2, mouseY) );
   	p.push( new Splash(windowWidth/2, mouseY) );
   }
-  
   
  (function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];
