@@ -32,20 +32,20 @@ var Splash = function(x, y) {
 	  fill(this.color);
 	  ellipse(this.x, this.y, this.diameter, this.diameter)
 	}
+	
 	this.fall = function() {
 	  this.x = this.x - this.speed;
 	}
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth,500);
-  canvas.parent('bg');
-  fingers = createVideo(['assets/smog2.mov',
-                         'assets/smog2.webm']);
+  canvas = createCanvas(windowWidth,windowHeight);
+  
+  fingers = createVideo(['assets/portfolio.mov',
+                         'assets/portfolio.webm']);
   fingers.parent('video')
   fingers.loop();
 }
-
 
  function draw() {
     for (var i = 0; i < p.length; i++) {
@@ -58,7 +58,6 @@ function setup() {
 	p.push( new Particle(windowWidth/2, mouseY) );
 	p.push( new Splash(windowWidth/2, mouseY) );
  }
- 
  
  
  
