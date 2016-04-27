@@ -46,6 +46,7 @@ logo = loadAnimation("assets/0.png", "assets/22.png")
 function setup() {
   	bg = loadImage("assets/bg water.jpg")
     canvas = createCanvas(1000,988);
+    canvas.parent('bg')
 	  FB.init({
         appId: '1186723288007631',
         status: true, 

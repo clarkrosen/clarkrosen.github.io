@@ -1,3 +1,10 @@
+#bg {
+  position: relative;
+  top:20px;
+  left:0px;
+  z-index: 2;
+}
+
 #other_panel {
   position: absolute;
   top: 200px;
