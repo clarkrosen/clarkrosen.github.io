@@ -1,6 +1,4 @@
-var playing = false;
-var fingers;
-var button;
+var portfolio;
 var x = [];
 var y = [];
 var p = [];
@@ -41,10 +39,10 @@ var Splash = function(x, y) {
 function setup() {
   canvas = createCanvas(windowWidth,windowHeight);
   
-  fingers = createVideo(['assets/portfolio2.mov',
+  portfolio = createVideo(['assets/portfolio2.mov',
                          'assets/portfolio2.webm']);
-  fingers.parent('video')
-  fingers.loop();
+  portfolio.parent('video')
+  portfolio.loop();
 }
 
  function draw() {
