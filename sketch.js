@@ -4,6 +4,7 @@ var player;
 var playing = false;
 var button;
 var bg;
+var canvas;
 
 var Particle = function(x, y) {
 	this.x = x;
