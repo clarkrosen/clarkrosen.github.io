@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Untitled</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <script src="libraries/p5.play.js" type="text/javascript"></script>
+    <script src="libraries/p5.dom.js" type="text/javascript"></script>
+    <script src="libraries/p5.sound.js" type="text/javascript"></script>
+    <script src="libraries/ideal-image-slider.js"></script>
+    <script src="sketch3.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="ideal-image-slider.css">
+    <link rel="stylesheet" href="themes/default/default.css">
+    <link href="style.css" rel="stylesheet" media="screen" />
+  </head>
+  
+  <body>
+    
+    <div id="page">
+    
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="art.html">Art</a>
+        </li>
+        <li>
+          <a href="commercial.html">Commercial</a>
+        </li>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    
+            <div id="slider">
+        <img src="assets/art1.jpg" alt="">
+        <img data-src="assets/art2.jpg" src="" alt="">
+        <img data-src="assets/art3.jpg" src="" alt="">
+        <img data-src="assets/art4.jpg" src="" alt="">
+        <img data-src="assets/art5.jpg" src="" alt="">
+        <img data-src="assets/art6.jpg" src="" alt="">
+        <img data-src="assets/art7.jpg" src="" alt="">
+        <img data-src="assets/art8.jpg" src="" alt="">
+        <img data-src="assets/art9.jpg" src="" alt="">
+    </div>
+    
+    <script>
+    new IdealImageSlider.Slider('#slider');
+    </script>
+
+    <div id="video"></div>
+    
+    <div id="back"></div>
+    
+   </div>
+   
+    
+  </body>
+  
+</html>
