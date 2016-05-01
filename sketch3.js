@@ -5,10 +5,10 @@ var p = [];
 var canvas;
 
 var Particle = function(x, y) {
-	this.x = x;
+	this.x = 480;
 	this.y = y;
 	this.diameter = random(10,50);
-	this.speed = random(0,10);
+	this.speed = random(0,30);
 	this.color = color(random(255), random(255), random(255));
 	this.show = function() {
 	  fill(this.color);
@@ -21,10 +21,10 @@ var Particle = function(x, y) {
 }
 
 var Splash = function(x, y) {
-	this.x = x;
+	this.x = 480;
 	this.y = y;
 	this.diameter = random(5,20);
-	this.speed = random(0,10);
+	this.speed = random(0,30);
 	this.color =  color(random(255), random(255), random(255));
 	this.show = function() {
 	  fill(this.color);
@@ -37,7 +37,8 @@ var Splash = function(x, y) {
 }
 
 function setup() {
-  canvas = createCanvas(windowWidth,windowHeight);
+  canvas = createCanvas(960,windowHeight);
+  canvas.parent('back')
   
   portfolio = createVideo(['assets/portfolio2.mov',
                          'assets/portfolio2.webm']);

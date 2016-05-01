@@ -2,7 +2,9 @@ var video;
 var canvas;
 
 function setup() {
-  createCanvas(1920, 1080);
+  canvas = createCanvas(960, 800);
+  canvas.parent('back')
+  
  	video = createVideo(['assets/lol.mp4', 'assets/lol.webm']);
   video.loop();
   video.hide();

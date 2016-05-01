@@ -1,37 +1,61 @@
-#bg {
-  position: relative;
-  top:20px;
-  left:0px;
-  z-index: 1;
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
 }
 
-#other_panel {
+nav ul {
   position: absolute;
-  top: 200px;
-  right:0px;
+  background: rgb(255,255,255);
+  top:800px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 2px 1px 1px #ccc;
   z-index: 2;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: 240px;
+}
+
+#back {
+  position: fixed;
+  top:50px;
+  z-index: -1;
 }
 
 #video {
   position: absolute;
-  top: 220px;
+  top: 800px;
   z-index: 1;
-  margin-left: 250px;
-  margin-right: 250px;
+  margin: 150px;
 }
 
-#left {
+#contact {
   background-color: #fff;
   box-shadow: 2px 5px 5px #ccc;
-  width: 650px;
-  height: 400px;
+  width: 660px;
+  height: 300px;
+  top: 225px;
   position: absolute;
-  top: 200px;
   z-index: 1;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 150px;
+  margin-right: 150px;
   text-align: center;
   padding-top: 100px;
 }
+
+#page {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 50px;
+}
+
 
 

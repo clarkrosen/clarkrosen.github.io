@@ -1,16 +1,12 @@
 var logo;
-var ground;
-var player;
-var playing = false;
-var button;
 var bg;
 var canvas;
 
 var Particle = function(x, y) {
-	this.x = x;
+	this.x = 425;
 	this.y = y;
 	this.diameter = random(10,50);
-	this.speed = random(0,10);
+	this.speed = random(0,30);
 	this.color = color(random(255), random(255), random(255));
 	this.show = function() {
 	  fill(this.color);
@@ -23,10 +19,10 @@ var Particle = function(x, y) {
 }
 
 var Splash = function(x, y) {
-	this.x = x;
+	this.x = 425;
 	this.y = y;
 	this.diameter = random(5,20);
-	this.speed = random(0,10);
+	this.speed = random(0,30);
 	this.color =  color(random(255), random(255), random(255));
 	this.show = function() {
 	  fill(this.color);
@@ -44,9 +40,11 @@ logo = loadAnimation("assets/0.png", "assets/22.png")
 }
 
 function setup() {
-  	bg = loadImage("assets/bg water.jpg")
-    canvas = createCanvas(1000,988);
-    canvas.parent('bg')
+    canvas = createCanvas(950,988);
+    canvas.parent('back')
+	  
+	  bg = loadImage("assets/bg water.jpg")
+	  
 	  FB.init({
         appId: '1186723288007631',
         status: true, 
@@ -67,12 +65,12 @@ function draw() {
   	p[i].fall();
 }
     
-    if(mouseY < 300)
+    if(mouseY < 500)
     logo.play();
     else
     logo.stop();
 
-   animation(logo, 500, 100);
+   animation(logo, 425, 100);
    
    camera.zoom = .6;
 }
