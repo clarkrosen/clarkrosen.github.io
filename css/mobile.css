@@ -1,13 +1,23 @@
 @media (max-width: 320px){
 
-nav li{
-  display: flex;
-  padding-right: 0em;
-  padding-left: 0em;
-  font-size: 11pt;
+nav ul {
+  position: absolute;
+  background: rgb(255,255,255);
+  top:0px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 2px 1px 1px #ccc;
+  z-index: 2;
 }
 
-#wrapper{
+nav li {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: 100px;
+}
+
+#page{
     max-width: 320px;
     min-width: 320px;
     margin: 0px auto;
