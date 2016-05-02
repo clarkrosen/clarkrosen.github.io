@@ -1,7 +1,10 @@
 @media (max-width: 320px){
 
-nav ul {
-  display: none;
+nav li{
+  display: flex;
+  padding-right: 0em;
+  padding-left: 0em;
+  font-size: 11pt;
 }
 
 #wrapper{
