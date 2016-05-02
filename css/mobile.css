@@ -1,6 +1,8 @@
 @media (max-width: 320px){
 
-.mobileHide { display: none;}
+nav{
+  dsiplay: none;
+}
 
 #page{
     max-width: 320px;
