@@ -1,0 +1,81 @@
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 25px;
+}
+
+nav ul {
+  position: absolute;
+  background: rgb(255,255,255);
+  top:800px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 2px 1px 1px #ccc;
+  z-index: 2;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: 240px;
+}
+
+a, a:visited {
+  font-weight: 400;
+  color: rgb(38,48,56);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+a:hover {
+  font-weight: 300;
+  color: rgb(224,224,224);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+a:active {
+  font-weight: 300;
+  color: rgb(193,205,205);
+  text-decoration: none;
+  letter-spacing: 0.05em;
+}
+
+#back {
+  position: fixed;
+  top:50px;
+  z-index: -1;
+}
+
+#video {
+  position: absolute;
+  top: 800px;
+  z-index: 1;
+  margin: 150px;
+}
+
+#contact {
+  background-color: #fff;
+  box-shadow: 2px 5px 5px #ccc;
+  width: 660px;
+  height: 300px;
+  top: 225px;
+  position: absolute;
+  z-index: 1;
+  margin-left: 150px;
+  margin-right: 150px;
+  text-align: center;
+  padding-top: 100px;
+}
+
+#page {
+  max-width: 960px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 50px;
+}
+
+
+
