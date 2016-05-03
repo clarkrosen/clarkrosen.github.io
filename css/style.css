@@ -45,6 +45,10 @@ a:active {
   letter-spacing: 0.05em;
 }
 
+.mobileShow {
+  display: none;
+}
+
 #back {
   position: fixed;
   top:50px;
@@ -70,10 +74,6 @@ a:active {
   margin-right: 150px;
   text-align: center;
   padding-top: 100px;
-}
-
-#mobile {
-  display: none;
 }
 
 #page {
