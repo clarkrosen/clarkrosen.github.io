@@ -72,6 +72,10 @@ a:active {
   padding-top: 100px;
 }
 
+#mobile {
+  display: none;
+}
+
 #page {
   max-width: 960px;
   margin: 0 auto;
