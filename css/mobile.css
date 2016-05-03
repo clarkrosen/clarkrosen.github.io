@@ -12,6 +12,9 @@ p {
 
 video {
   margin:0 auto;
+  padding: 5px;
+  width: 100%    !important;
+  height: auto   !important;
 }
 
 .mobileShow {
