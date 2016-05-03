@@ -1,17 +1,18 @@
-@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,900);
 @media only screen and (max-device-width: 480px){
 
 p {
   margin: 0 auto;
   font-family: 'Lato', sans-serif;
   text-align: center;
-  font-weight: 400;
+  font-weight: 100;
   font-size: 18px;
   line-height: 25px;
 }
 
 h1 {
   font-weight: 900;
+  text-align: center;
 }
 
 video {
