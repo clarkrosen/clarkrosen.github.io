@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Francois+One|Lato:100,300,400);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,400,900);
 @media only screen and (max-device-width: 480px){
 
 p {
@@ -8,6 +8,10 @@ p {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
+}
+
+h1 {
+  font-weight: 900;
 }
 
 video {
