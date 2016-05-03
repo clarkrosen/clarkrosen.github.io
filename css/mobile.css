@@ -1,12 +1,27 @@
 @media only screen and (max-device-width: 480px){
 
-#desktop {
-  display: none;
-}
-
-#mobile {
+body {
+  font-family: sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 12px;
   line-height: 25px;
 }
+
+nav ul {
+  position: absolute;
+  background: rgb(255,255,255);
+  top:0px;
+  margin: 0 auto;
+  padding: 5px;
+  box-shadow: 2px 1px 1px #ccc;
+  z-index: 2;
+}
+
+nav li {
+  display: inline-block;
+  line-height: 50px;
+  text-align: center;
+  width: 150px;
+}
+
 }
