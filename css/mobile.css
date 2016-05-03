@@ -1,5 +1,15 @@
 @media only screen and (max-device-width: 480px){
 
+p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 72px;
+}
+
+video {
+  margin:0 auto;
+}
+
 .mobileShow {
   display: inline;
 }
