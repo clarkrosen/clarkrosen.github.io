@@ -2,11 +2,12 @@
 
 #page{
   display: none;
+}
+
+#mobile{
   max-width: 320px;
   margin: 0 auto;
-  background: rgb(255,255,255);
   font-weight: bold;
-  color: rgb(0,0,0);
   font-size: 30px;
 }
 
