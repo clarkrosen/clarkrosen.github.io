@@ -49,6 +49,10 @@ a:active {
   display: none;
 }
 
+.mobileHide {
+  display: inline;
+}
+
 #back {
   position: fixed;
   top:50px;

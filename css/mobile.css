@@ -1,7 +1,11 @@
 @media only screen and (max-device-width: 480px){
 
 .mobileShow {
-  display:inline;
+  display: inline;
+}
+
+.mobileHide {
+  display: none;
 }
 
 }
